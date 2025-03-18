@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, send_file
 import sqlite3 as sql
 
 # the flask application: uses the webserver imported from the flask module:
@@ -74,6 +74,22 @@ def send_buggy_json():
     ).items() 
     return jsonify(
         {key: val for key, val in buggies if not (val == "" or val is None)}
+    )
+
+#-----------------------------------------------------------------------------
+# send the favicon for the buggy editor:
+# This sends the browser an icon image with a cache "time to live" of 24 hours,
+# so you shouldn't see this being requested too often while you're debugging.
+# There's no template here because it's sending a file straight back.
+# (Usually you'd let Flask send images back as static content but this route
+# adds the cache header as a special case).
+#-----------------------------------------------------------------------------
+@app.route("/favicon.png")
+def send_favicon():
+    return send_file(
+        "static/favicon.png",
+        mimetype='image/png',
+        max_age=60*60*24
     )
 
 #------------------------------------------------------------
