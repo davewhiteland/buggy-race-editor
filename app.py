@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, render_template, request, send_file
+import os
 import sqlite3 as sql
 
 # the flask application: uses the webserver imported from the flask module:
@@ -99,4 +100,6 @@ def send_favicon():
 # with control-C), it will run forever... so any code you put _after_ app.run
 # here won't normally be run.
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    allocated_port = os.environ.get('BUGGY_EDITOR_PORT') or 5000
+    app.run(debug=True, host="0.0.0.0", port=allocated_port)
+
