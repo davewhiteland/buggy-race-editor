@@ -22,8 +22,16 @@ changed. This is currently the real "source" of the contents of the
 single-commit `main` branch in
 [buggyrace/buggy-race-editor](https://github.com/buggyrace/buggy-race-editor).
 A snapshot of _that_ commit is what's used inside the latest version of the
-race server (at
-[buggyrace/buggy-race-server](https://github.com/buggyrace/buggy-race-server)).
+[race server](https://github.com/buggyrace/buggy-race-server)). Specifically,
+a (manual, yes) copy of the files is maintained in the
+[`editor_source` dir inside the race server](https://github.com/buggyrace/buggy-race-server/tree/main/editor_source)
+... this is used for projects that are distributing the source code as a zip
+file.
+
+> There are multiple ways teachers can choose to distribute the source code!
+> See the Buggy Racing docs on
+> [_How students get their copy of the buggy editor_](https://www.buggyrace.net/docs/buggy-editor/distributing-the-code.html)
+
 
 I _think_ it's more confusing to have this repo in the `buggyrace` account,
 because it's only of use to developers who are working on the project itself.
