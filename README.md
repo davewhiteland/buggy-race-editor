@@ -3,13 +3,13 @@
 This is a copy of the GitHub repo
 [buggyrace/buggy-race-editor](https://github.com/buggyrace/buggy-race-editor).
 
-The Buggy Race Editor is the part of the [Buggy Racing
-project](https://www.buggyrace.net) that the students start with. That is, at
-the start of the project, students start with a copy of the Buggy Editor source
-code — it's a Python Flask application.
+The Buggy Race Editor is the students' part of the [Buggy Racing
+project](https://www.buggyrace.net). That is, at the start of the project,
+students start with a copy of the Buggy Editor source code — it's a working but
+minimal Python Flask application they are invited to develop.
 
-That repo — being that it's something students may be encouraged to fork — is
-something of a special case regarding its (commit) history. It's really an
+That editor repo — being that it's something students may be encouraged to fork
+— is something of a special case regarding its (commit) history. It's really an
 asset that will exist within each students' project. As such, anything other
 than a single "initial commit" in its history is at best irrelevant and at
 worst confusing. Similarly, there should be no branches in it.
@@ -18,7 +18,7 @@ worst confusing. Similarly, there should be no branches in it.
 optional; it depends on how the teachers/tutors are running the project.)
 
 For now I'm keeping **this repo** with some history of how the editor has
-changed. This is currently the real "source" of the contents of the
+changed. This is currently the developers' "source" of the contents of the
 single-commit `main` branch in
 [buggyrace/buggy-race-editor](https://github.com/buggyrace/buggy-race-editor).
 A snapshot of _that_ commit is what's used inside the latest version of the
@@ -33,9 +33,9 @@ file.
 > [_How students get their copy of the buggy editor_](https://www.buggyrace.net/docs/buggy-editor/distributing-the-code.html)
 
 
-I _think_ it's more confusing to have this repo in the `buggyrace` account,
-because it's only of use to developers who are working on the project itself.
-Hence this copy here, in my personal account.
+I _think_ it would be more confusing to have this repo in the `buggyrace`
+account, because it's only of use to developers who are working on the project
+itself. Hence this copy here, in my personal account.
 
 ## Branches
 
