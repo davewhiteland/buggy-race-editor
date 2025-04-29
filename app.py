@@ -108,6 +108,6 @@ def send_favicon():
 if __name__ == "__main__":
     app.run(
         debug=True,
-        host=environ.get("BUGGY_EDITOR_SERVER") or "0.0.0.0",
+        host=environ.get("BUGGY_EDITOR_HOST") or "0.0.0.0",
         port=environ.get("BUGGY_EDITOR_PORT") or 5000
     )
