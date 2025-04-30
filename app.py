@@ -1,7 +1,6 @@
 from flask import Flask, jsonify, render_template, request, send_file
-import os
-import sqlite3 as sql
 from os import environ
+import sqlite3 as sql
 
 # the flask application: uses the webserver imported from the flask module:
 app = Flask(__name__)
